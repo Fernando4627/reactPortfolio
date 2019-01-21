@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import NavbarSection from '';
-import FooterSection from '';
+import MainContainer from "./components/MainContainer";
+import FooterSection from './components/FooterSection';
 import homePage from './components/content/home';
-import MainContainer from '';
+import portfolio from "./components/content/portfolio";
+import contact from "./components/content/contact";
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
       <div>
-        <NavbarSection/>
         <MainContainer/>
         <FooterSection/>
         <Switch>
