@@ -1,0 +1,225 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../images/what-the-hex-dark.png");
+}
+
+/************
+ Text Styles
+*************/
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+
+/*************
+ Header Styles 
+**************/
+
+header {
+    background-color: #fff;
+    overflow: auto;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #EEEFF0;
+}
+
+header div {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header div h1, header div h2 {
+    float: left;
+    background-color: #47bedb;
+    color: #fff;
+    margin: 0px;
+    padding: 20px 20px 20px 20px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header li {
+    display: inline;
+}
+
+/********* 
+Nav Styles
+**********/
+nav ul {
+    margin: 0px;
+    padding: 29px 10px 29px 10px;
+}
+
+nav li {
+    padding: 10px;
+    border-right: 1px solid #EEEFF0;
+}
+
+nav li a {
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #47bedb;
+}
+
+nav li a.active {
+    color: #47bedb;
+}
+.bg-light {
+    background-color: #fff !important;
+  }
+
+/**********
+Section Styles 
+***********/
+
+section {
+    clear: both;
+    width: 898px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background: #fff;
+    overflow: auto;
+    border: 2px solid #EEEFF0;
+}
+
+section h2 {
+    margin: 10px 0px 20px 0px;
+    color: #47bedb;
+}
+
+hr {
+    border: 2px solid #EEEFF0;
+}
+/************
+Footer Styles
+*************/
+
+footer {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 5px 5px 5px;
+    background-color: #818181;
+    border-top: 10px solid #47bedb;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+footer div {
+    /* width: 960px; */
+    text-align: center;
+    display: inline;
+}
+
+footer div p {
+    color: #EEEFF0;
+}
+
+
+/***********
+Extra Styles 
+************/
+.marginadd{
+    margin: 10px;
+}
+
+.float-left {
+    float: left;
+    padding-right: 18px;
+    padding-bottom: 18px;
+}
+
+/***************
+Portfolio Images
+****************/
+
+.port-img {
+    width: 27%;
+    margin-left: 3%;
+    margin-right: 3%;
+    float: left;
+    text-align: center;
+}
+
+.portsize {
+    width: 100%;
+    height: 300px;
+}
+
+.port-h3 {
+    background-color: #47bedb;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    bottom: 90px;
+}
+
+/***********************
+Contact Page Form Styles
+************************/
+
+form {
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid #EEEFF0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    outline: none;
+    border: 1px solid #47bedb;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid #EEEFF0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #47bedb;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    outline: none;
+    color: #fff;
+    background-color: #47bedb;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 50px
+}
+
+input[type=submit]:hover {
+    background-color: #2f8196;
+}
+/* Thanks Gabe */
