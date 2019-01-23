@@ -1,143 +1,77 @@
-import React, { Component } from "react";
-import { Carousel, CarouselInner, CarouselItem, Container, Row, Col, Card, CardImage, CardBody, CardTitle, CardText,
-Button } from "mdbreact";
+import React from "react";
+import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
+"mdbreact";
 
-class portfolio extends Component {
-  render() {
-    return (
-      <Container>
-        <Carousel activeItem={1} length={3} slide={true} showControls={true} showIndicators={true} multiItem>
-          <CarouselInner>
-            <Row>
-              <CarouselItem itemId="1">
-                <Col md="4">
-                <Card className="mb-2">
-                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" />
-                  <CardBody>
-                    <CardTitle>Card title</CardTitle>
-                    <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </CardText>
-                    <Button color="primary">Button</Button>
-                  </CardBody>
-                </Card>
-                </Col>
-                <Col md="4" className="clearfix d-none d-md-block">
-                <Card className="mb-2">
-                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" />
-                  <CardBody>
-                    <CardTitle>Card title</CardTitle>
-                    <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </CardText>
-                    <Button color="primary">Button</Button>
-                  </CardBody>
-                </Card>
-                </Col>
-                <Col md="4" className="clearfix d-none d-md-block">
-                <Card className="mb-2">
-                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" />
-                  <CardBody>
-                    <CardTitle>Card title</CardTitle>
-                    <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </CardText>
-                    <Button color="primary">Button</Button>
-                  </CardBody>
-                </Card>
-                </Col>
-              </CarouselItem>
-              <CarouselItem itemId="2">
-                <Col md="4">
-                <Card className="mb-2">
-                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(60).jpg" />
-                  <CardBody>
-                    <CardTitle>Card title</CardTitle>
-                    <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </CardText>
-                    <Button color="primary">Button</Button>
-                  </CardBody>
-                </Card>
-                </Col>
-                <Col md="4" className="clearfix d-none d-md-block">
-                <Card className="mb-2">
-                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg" />
-                  <CardBody>
-                    <CardTitle>Card title</CardTitle>
-                    <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </CardText>
-                    <Button color="primary">Button</Button>
-                  </CardBody>
-                </Card>
-                </Col>
-                <Col md="4" className="clearfix d-none d-md-block">
-                <Card className="mb-2">
-                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(48).jpg" />
-                  <CardBody>
-                    <CardTitle>Card title</CardTitle>
-                    <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </CardText>
-                    <Button color="primary">Button</Button>
-                  </CardBody>
-                </Card>
-                </Col>
-              </CarouselItem>
-              <CarouselItem itemId="3">
-                <Col md="4">
-                <Card className="mb-2">
-                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" />
-                  <CardBody>
-                    <CardTitle>Card title</CardTitle>
-                    <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </CardText>
-                    <Button color="primary">Button</Button>
-                  </CardBody>
-                </Card>
-                </Col>
-                <Col md="4" className="clearfix d-none d-md-block">
-                <Card className="mb-2">
-                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg" />
-                  <CardBody>
-                    <CardTitle>Card title</CardTitle>
-                    <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </CardText>
-                    <Button color="primary">Button</Button>
-                  </CardBody>
-                </Card>
-                </Col>
-                <Col md="4" className="clearfix d-none d-md-block">
-                <Card className="mb-2">
-                  <CardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(41).jpg" />
-                  <CardBody>
-                    <CardTitle>Card title</CardTitle>
-                    <CardText>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </CardText>
-                    <Button color="primary">Button</Button>
-                  </CardBody>
-                </Card>
-                </Col>
-              </CarouselItem>
-            </Row>
-          </CarouselInner>
-        </Carousel>
-      </Container>
-      );
-    }
-  }
+const Portfolio = () => {
+  return (
+    <MDBContainer>
+      <h4 className="mt-5 mb-2">Portfolio</h4>
+      <MDBCarousel activeItem={1} length={4} showControls={true} showIndicators={true} className="z-depth-1">
+        <MDBCarouselInner>
+          <MDBCarouselItem itemId="1">
+            <MDBView>
+              <img className="d-block w-100" src="/assets/images/giphy.jpg" alt="First slide" />
+              <MDBMask overlay="black-light" />
+            </MDBView>
+            <MDBCarouselCaption>
+              <h3 className="h3-responsive">Light mask</h3>
+              <p>First text</p>
+            </MDBCarouselCaption>
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="2">
+            <MDBView>
+              <img className="d-block w-100" src="/assets/images/Trains.jpg" alt="Second slide" />
+              <MDBMask overlay="black-strong" />
+            </MDBView>
+            <MDBCarouselCaption>
+              <h3 className="h3-responsive">Strong mask</h3>
+              <p>Second text</p>
+            </MDBCarouselCaption>
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="3">
+            <MDBView>
+              <img className="d-block w-100" src="/assets/images/Project1.jpg" alt="Third slide" />
+              <MDBMask overlay="black-slight" />
+            </MDBView>
+            <MDBCarouselCaption>
+              <h3 className="h3-responsive">Slight mask</h3>
+              <p>Third text</p>
+            </MDBCarouselCaption>
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="4">
+            <MDBView>
+              <img className="d-block w-100" src="/assets/images/Unit4.jpg" alt="Mattonit's item" />
+              <MDBMask overlay="black-light" />
+            </MDBView>
+            <MDBCarouselCaption>
+              <h3 className="h3-responsive">Sopot Beach</h3>
+              <p>Taken june 21th by @mattonit</p>
+            </MDBCarouselCaption>
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="5">
+            <MDBView>
+              <img className="d-block w-100" src="/assets/images/giphy.jpg" alt="First slide" />
+              <MDBMask overlay="black-light" />
+            </MDBView>
+            <MDBCarouselCaption>
+              <h3 className="h3-responsive">Light mask</h3>
+              <p>First text</p>
+            </MDBCarouselCaption>
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="6">
+            <MDBView>
+              <img className="d-block w-100" src="/assets/images/giphy.jpg" alt="First slide" />
+              <MDBMask overlay="black-light" />
+            </MDBView>
+            <MDBCarouselCaption>
+              <h3 className="h3-responsive">Light mask</h3>
+              <p>First text</p>
+            </MDBCarouselCaption>
+          </MDBCarouselItem>
+        </MDBCarouselInner>
+      </MDBCarousel>
+    </MDBContainer>
+  );
+}
 
-export default portfolio;
+export default Portfolio;
