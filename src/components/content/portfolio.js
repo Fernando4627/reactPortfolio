@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <MDBContainer>
       <h4 className="mt-5 mb-2">Portfolio</h4>
-      <MDBCarousel activeItem={1} length={4} showControls={true} showIndicators={true} className="z-depth-1">
+      <MDBCarousel activeItem={1} length={6} showControls={true} showIndicators={true} className="z-depth-1">
         <MDBCarouselInner>
           <MDBCarouselItem itemId="1">
             <MDBView>
