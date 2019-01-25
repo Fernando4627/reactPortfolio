@@ -80,7 +80,7 @@ class MainContainer extends React.Component {
                       school,
                       and enjoyed it! I enjoy seeing the results of the hard work I put in and also like to support
                       others
-                      with the knowledge I have or can do the work to find a way to be helpful.I am a quick learner and
+                      with the knowledge I have or can do the work to find a way to be helpful. I am a quick learner and
                       adaptive
                     to all situations.
                     </p>
