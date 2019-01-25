@@ -37,10 +37,13 @@ class MainContainer extends React.Component {
                     <MDBNavLink to="#">Home</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="/portfolio">Portfolio</MDBNavLink>
+                  <MDBNavLink to="#aboutme">About Me</MDBNavLink>
+                </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="#portfolio">Portfolio</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="/contact">Contact</MDBNavLink>
+                    <MDBNavLink to="#contact">Contact</MDBNavLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right>
@@ -69,7 +72,7 @@ class MainContainer extends React.Component {
         </header>
 
         <main>
-          <MDBContainer className="text-center my-5">
+          <MDBContainer className="text-center my-5" id="aboutme">
             <h2 className="text-white text-center">About Me</h2>
             <MDBRow>
               <img src="/assets/images/me.jpg" className="col-md-3 h-25" alt="me"/>
@@ -81,7 +84,7 @@ class MainContainer extends React.Component {
                       school,
                       and enjoyed it! I enjoy seeing the results of the hard work I put in and also like to support
                       others
-                      with the knowledge I have or can do the work to find a way to be helpful.I am a quick learner and
+                      with the knowledge I have or can do the work to find a way to be helpful. I am a quick learner and
                       adaptive
                     to all situations.
                     </p>
@@ -99,7 +102,7 @@ class MainContainer extends React.Component {
         </main>
         <div>
           <MDBContainer>
-            <Portfolio />
+            <Portfolio id="portfolio" />
           </MDBContainer>
         </div>
       </div>
