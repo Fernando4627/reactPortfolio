@@ -3,6 +3,7 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,
 import { BrowserRouter as Router } from 'react-router-dom';
 // import CarouselPage from "./content/quotes";
 import Portfolio from "./content/portfolio"
+import scrollTo from "scroll-to-element"
 
 class MainContainer extends React.Component {
   constructor(props) {
