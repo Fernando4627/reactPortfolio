@@ -1,9 +1,8 @@
 import React from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBMask, MDBView, MDBIcon, MDBRow, MDBCol } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
-// import CarouselPage from "./content/quotes";
 import Portfolio from "./content/portfolio"
-import scrollTo from "scroll-to-element"
+import { ScrollTo } from "react-scroll-to";
 
 class MainContainer extends React.Component {
   constructor(props) {
@@ -27,23 +26,47 @@ class MainContainer extends React.Component {
         <header>
           <Router>
             <MDBNavbar color="elegant-color-dark" fixed="top" dark expand="md" scrolling transparent>
-              <MDBNavbarBrand href="/">
+              <MDBNavbarBrand href="/" id="top">
                 <strong>Fernando Aguilar</strong>
               </MDBNavbarBrand>
               {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav left>
                   <MDBNavItem active>
-                    <MDBNavLink to="#">Home</MDBNavLink>
+                    <MDBNavLink>
+                      <ScrollTo>
+                        {({ scrollTo }) => (
+                          <a onClick={() => scrollTo({ id: "top" })}>Home</a>
+                        )}
+                      </ScrollTo>
+                    </MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                  <MDBNavLink to="#aboutme">About Me</MDBNavLink>
-                </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#portfolio">Portfolio</MDBNavLink>
+                    <MDBNavLink>
+                      <ScrollTo>
+                        {({ scrollTo }) => (
+                          <a onClick={() => scrollTo({ id: "aboutme" })}>About Me</a>
+                        )}
+                      </ScrollTo>
+                    </MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#contact">Contact</MDBNavLink>
+                    <MDBNavLink>
+                    <ScrollTo>
+                        {({ scrollTo }) => (
+                          <a onClick={() => scrollTo({ id:"portfolio"})}>Portfolio</a>
+                        )}
+                      </ScrollTo>
+                    </MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink>
+                    <ScrollTo>
+                        {({ scrollTo }) => (
+                          <a onClick={() => scrollTo({ id:"contact"})}>Contact</a>
+                        )}
+                      </ScrollTo>
+                    </MDBNavLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right>
@@ -75,7 +98,7 @@ class MainContainer extends React.Component {
           <MDBContainer className="text-center my-5" id="aboutme">
             <h2 className="text-white text-center">About Me</h2>
             <MDBRow>
-              <img src="/assets/images/me.jpg" className="col-md-3 h-25" alt="me"/>
+              <img src="/assets/images/me.jpg" className="col-md-3 h-25" alt="me" />
               <MDBCol size="9">
                 <p className="text-white text-center">
                   I am a dedicated worker, I strive to do my best in all situations. When there is an answer I do not
