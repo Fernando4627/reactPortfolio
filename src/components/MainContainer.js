@@ -40,16 +40,7 @@ class MainContainer extends React.Component {
                         )}
                       </ScrollTo>
                     </MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#!">
-                      <ScrollTo>
-                      {({ scrollTo }) => (
-                          <a onClick={() => scrollTo({ ref: this.aboutme})}>Home</a>
-                        )}
-                      </ScrollTo>
-                    </MDBNavLink>
-                  </MDBNavItem>
+                  </MDBNavItem>>
                   <MDBNavItem>
                     <MDBNavLink to="#!">
                       <ScrollTo>
