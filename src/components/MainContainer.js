@@ -36,7 +36,7 @@ class MainContainer extends React.Component {
                     <MDBNavLink>
                       <ScrollTo>
                         {({ scrollTo }) => (
-                          <a onClick={() => scrollTo({ id: "top" })}>Home</a>
+                          <a onClick={() => scrollTo({ ref: this.top})}>Home</a>
                         )}
                       </ScrollTo>
                     </MDBNavLink>
@@ -44,26 +44,26 @@ class MainContainer extends React.Component {
                   <MDBNavItem>
                     <MDBNavLink>
                       <ScrollTo>
-                        {({ scrollTo }) => (
-                          <a onClick={() => scrollTo({ id: "aboutme" })}>About Me</a>
+                      {({ scrollTo }) => (
+                          <a onClick={() => scrollTo({ ref: this.aboutme})}>Home</a>
                         )}
                       </ScrollTo>
                     </MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
                     <MDBNavLink>
-                    <ScrollTo>
-                        {({ scrollTo }) => (
-                          <a onClick={() => scrollTo({ id:"portfolio"})}>Portfolio</a>
+                      <ScrollTo>
+                      {({ scrollTo }) => (
+                          <a onClick={() => scrollTo({ ref: this.aboutme})}>About Me</a>
                         )}
                       </ScrollTo>
                     </MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
                     <MDBNavLink>
-                    <ScrollTo>
-                        {({ scrollTo }) => (
-                          <a onClick={() => scrollTo({ id:"contact"})}>Contact</a>
+                      <ScrollTo>
+                      {({ scrollTo }) => (
+                          <a onClick={() => scrollTo({ ref: this.portfolio})}>Portfolio</a>
                         )}
                       </ScrollTo>
                     </MDBNavLink>
@@ -86,7 +86,7 @@ class MainContainer extends React.Component {
           </Router>
 
           <MDBView src="https://i.pinimg.com/originals/06/26/3c/06263ca04f5ca649867d699304493a44.jpg">
-            <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center">
+            <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center" ref={this.top}>
               <h4 className="w-75">
                 Web developer focused on improving client’s user experience and increasing functionality for developers. By having a strong work ethic, I strive on improving and perfect every challenge I come across. Passionate on learning any new languages and skilled at problem solving, Javascript, CSS,  HTML, and Node.js, experience in working in teams able to pick up the slack in any position that is falling behind but also work on my own.
               </h4>
@@ -95,7 +95,7 @@ class MainContainer extends React.Component {
         </header>
 
         <main>
-          <MDBContainer className="text-center my-5" id="aboutme">
+          <MDBContainer className="text-center my-5" ref={this.aboutme}>
             <h2 className="text-white text-center">About Me</h2>
             <MDBRow>
               <img src="/assets/images/me.jpg" className="col-md-3 h-25" alt="me" />
@@ -125,7 +125,7 @@ class MainContainer extends React.Component {
         </main>
         <div>
           <MDBContainer>
-            <Portfolio id="portfolio" />
+            <Portfolio ref={this.portfolio} />
           </MDBContainer>
         </div>
       </div>

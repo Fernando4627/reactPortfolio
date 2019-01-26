@@ -14,8 +14,11 @@ const Portfolio = () => {
               <MDBMask overlay="black-light" />
             </MDBView>
             <MDBCarouselCaption>
-              <h3 className="h3-responsive">Light mask</h3>
-              <p>First text</p>
+              <h3 className="h3-responsive">AJAX_Giphy</h3>
+              <p><a href="https://github.com/Fernando4627/AJAX_Giphy">Repository</a>
+              </p>
+              <p><a href="https://fernando4627.github.io/AJAX_Giphy/">Giphy</a>
+              </p>
             </MDBCarouselCaption>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="2">
@@ -24,8 +27,11 @@ const Portfolio = () => {
               <MDBMask overlay="black-strong" />
             </MDBView>
             <MDBCarouselCaption>
-              <h3 className="h3-responsive">Strong mask</h3>
-              <p>Second text</p>
+              <h3 className="h3-responsive">Firebase Trains</h3>
+              <p><a href="https://github.com/Fernando4627/Firebase_Train">Repository</a>
+              </p>
+              <p><a href="https://fernando4627.github.io/Firebase_Train/">Firebase Trains</a>
+              </p>
             </MDBCarouselCaption>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="3">
@@ -34,8 +40,11 @@ const Portfolio = () => {
               <MDBMask overlay="black-slight" />
             </MDBView>
             <MDBCarouselCaption>
-              <h3 className="h3-responsive">Slight mask</h3>
-              <p>Third text</p>
+              <h3 className="h3-responsive">Game Search</h3>
+              <p><a href="https://github.com/GeoQer/GroupProject1">Repository</a>
+              </p>
+              <p><a href="https://geoqer.github.io/GroupProject1/">Game Search</a>
+              </p>
             </MDBCarouselCaption>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="4">
@@ -44,18 +53,23 @@ const Portfolio = () => {
               <MDBMask overlay="black-light" />
             </MDBView>
             <MDBCarouselCaption>
-              <h3 className="h3-responsive">Sopot Beach</h3>
-              <p>Taken june 21th by @mattonit</p>
+              <h3 className="h3-responsive">Gem Game</h3>
+              <p><a href="https://github.com/Fernando4627/unit-4-game">Repository</a>
+              </p>
+              <p><a href="https://fernando4627.github.io/unit-4-game/">Gem Game</a>
+              </p>
             </MDBCarouselCaption>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="5">
             <MDBView>
-              <img className="d-block w-100" src="/assets/images/giphy.jpg" alt="First slide" />
+              <img className="d-block w-100" src="/assets/images/ckbk.jpg" alt="First slide" />
               <MDBMask overlay="black-light" />
             </MDBView>
             <MDBCarouselCaption>
-              <h3 className="h3-responsive">Light mask</h3>
-              <p>First text</p>
+              <h3 className="h3-responsive">CKBK</h3>
+              <p><a href="https://github.com/andresjgonzalez6/Platform-9-and-3-4">Repository</a></p>
+              <p><a href="https://guarded-springs-86797.herokuapp.com/">CKBK</a>
+              </p>
             </MDBCarouselCaption>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="6">
@@ -64,8 +78,11 @@ const Portfolio = () => {
               <MDBMask overlay="black-light" />
             </MDBView>
             <MDBCarouselCaption>
-              <h3 className="h3-responsive">Light mask</h3>
-              <p>First text</p>
+              <h3 className="h3-responsive">LFJ Looking For Job</h3>
+              <p><a href="https://github.com/Fernando4627/LFJ-Looking-for-Job">Repository</a>
+              </p>
+              <p><a href="https://fernando4627.github.io/AJAX_Giphy/">LFJ</a>
+              </p>
             </MDBCarouselCaption>
           </MDBCarouselItem>
         </MDBCarouselInner>
