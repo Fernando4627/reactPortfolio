@@ -10,7 +10,7 @@ const Portfolio = () => {
         <MDBCarouselInner>
           <MDBCarouselItem itemId="1">
             <MDBView>
-              <img className="d-block w-100" src="/assets/images/giphy.jpg" alt="First slide" />
+              <img className="d-block w-100" src="/assets/images/ajax.jpg" alt="First slide" />
               <MDBMask overlay="black-light" />
             </MDBView>
             <MDBCarouselCaption>
@@ -62,7 +62,7 @@ const Portfolio = () => {
           </MDBCarouselItem>
           <MDBCarouselItem itemId="5">
             <MDBView>
-              <img className="d-block w-100" src="/assets/images/ckbk.jpg" alt="First slide" />
+              <img className="d-block w-100" src="/assets/images/projecttwo.jpg" alt="First slide" />
               <MDBMask overlay="black-light" />
             </MDBView>
             <MDBCarouselCaption>
