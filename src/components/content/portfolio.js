@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <MDBContainer>
       <h4 className="mt-5 mb-2">Portfolio</h4>
-      <MDBCarousel activeItem={1} length={5} showControls={true} showIndicators={true} className="z-depth-1">
+      <MDBCarousel activeItem={1} length={6} showControls={true} showIndicators={true} className="z-depth-1">
         <MDBCarouselInner>
           <MDBCarouselItem itemId="1">
             <MDBView>
@@ -72,19 +72,19 @@ const Portfolio = () => {
               </p>
             </MDBCarouselCaption>
           </MDBCarouselItem>
-          {/* <MDBCarouselItem itemId="6">
+          <MDBCarouselItem itemId="6">
             <MDBView>
-              <img className="d-block w-100" src="/assets/images/giphy.jpg" alt="First slide" />
+              <img className="d-block w-100" src="/assets/images/lfj.jpg" alt="First slide" />
               <MDBMask overlay="black-light" />
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">LFJ Looking For Job</h3>
               <p><a href="https://github.com/Fernando4627/LFJ-Looking-for-Job">Repository</a>
               </p>
-              <p><a href="https://fernando4627.github.io/AJAX_Giphy/">LFJ</a>
+              <p><a href="https://secure-sierra-78095.herokuapp.com/">LFJ</a>
               </p>
             </MDBCarouselCaption>
-          </MDBCarouselItem> */}
+          </MDBCarouselItem>
         </MDBCarouselInner>
       </MDBCarousel>
     </MDBContainer>
