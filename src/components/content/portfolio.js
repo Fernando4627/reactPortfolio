@@ -5,7 +5,17 @@ import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDB
 const Portfolio = () => {
   return (
     <MDBContainer>
+<<<<<<< HEAD
       <h4 className="mt-5 mb-2">Portfolio</h4>
+=======
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h2 className="text-white text-center">Portfolio</h2>
+>>>>>>> c57b648d1c742ff94038b032ae71258d26604cd8
       <MDBCarousel activeItem={1} length={6} showControls={true} showIndicators={true} className="z-depth-1">
         <MDBCarouselInner>
           <MDBCarouselItem itemId="1">
