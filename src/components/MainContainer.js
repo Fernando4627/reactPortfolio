@@ -32,29 +32,32 @@ class MainContainer extends React.Component {
               {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav left>
-                  <MDBNavItem active>
-                    <MDBNavLink to="#!">
-                      <ScrollTo>
-                        {({ scrollTo }) => (
-                          <a onClick={() => scrollTo({ ref: this.top})}>Home</a>
-                        )}
-                      </ScrollTo>
-                    </MDBNavLink>
-                  </MDBNavItem>>
-                  <MDBNavItem>
-                    <MDBNavLink to="#!">
+                  <MDBNavItem >
+                    <MDBNavLink to="/">
                       <ScrollTo>
                       {({ scrollTo }) => (
-                          <a onClick={() => scrollTo({ ref: this.aboutme})}>About Me</a>
+                        // eslint-disable-next-line jsx-a11y/anchor-is-valid
+                        <a onClick={() => scrollTo({ ref: this.top, x: 0, y: 0 })}>Home</a>
+                      )}
+                      </ScrollTo>
+                    </MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem >
+                    <MDBNavLink to="aboutme">
+                      <ScrollTo>
+                      {({ scrollTo }) => (
+                        // eslint-disable-next-line jsx-a11y/anchor-is-valid
+                        <a onClick={() => scrollTo({ ref: this.aboutme, x: 0, y: 500 })}>About Me</a>
                         )}
                       </ScrollTo>
                     </MDBNavLink>
                   </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#!">
+                  <MDBNavItem >
+                    <MDBNavLink to="portfolio">
                       <ScrollTo>
                       {({ scrollTo }) => (
-                          <a onClick={() => scrollTo({ ref: this.portfolio})}>Portfolio</a>
+                        // eslint-disable-next-line jsx-a11y/anchor-is-valid
+                        <a onClick={() => scrollTo({ ref: this.portfolio, x: 0, y: 1250 })}>Portfolio</a>
                         )}
                       </ScrollTo>
                     </MDBNavLink>
